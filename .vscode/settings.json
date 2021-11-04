@@ -18,5 +18,11 @@
 	"[json]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"cSpell.words": ["browserslist", "clsx", "commitlint", "typecheck"]
+	"cSpell.words": [
+		"browserslist",
+		"clsx",
+		"commitlint",
+		"makergram",
+		"typecheck"
+	]
 }
