@@ -1,6 +1,6 @@
 ---
-sidebar_position: 0
-sidebar_label: Example Person
+sidebar_position: 7
+sidebar_label: Example Person Template
 ---
 
 # Example Person
