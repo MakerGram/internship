@@ -6,15 +6,15 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: "My Site",
-	tagline: "Dinosaurs are cool",
-	url: "https://your-docusaurus-test-site.com",
+	title: "MakerGram Internship",
+	tagline: "📖 Learn  🗣️ Share 🤝 Collaborate",
+	url: "https://makergram.com/internship",
 	baseUrl: "/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
 	favicon: "img/favicon.ico",
-	organizationName: "facebook", // Usually your GitHub org/user name.
-	projectName: "docusaurus", // Usually your repo name.
+	organizationName: "makergram", // Usually your GitHub org/user name.
+	projectName: "internship", // Usually your repo name.
 
 	presets: [
 		[
@@ -43,9 +43,9 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
-				title: "My Site",
+				title: "MakerGram Internship",
 				logo: {
-					alt: "My Site Logo",
+					alt: "MakerGram Logo",
 					src: "img/logo.svg",
 				},
 				items: [
@@ -53,11 +53,17 @@ const config = {
 						type: "doc",
 						docId: "intro",
 						position: "left",
-						label: "Tutorial",
+						label: "Internship Logs",
 					},
-					{to: "/blog", label: "Blog", position: "left"},
+					{href: "https://makergram.com", label: "Website", position: "left"},
 					{
-						href: "https://github.com/facebook/docusaurus",
+						href: "https://makergram.com/community",
+						label: "Community",
+						position: "left",
+					},
+					{href: "https://makergram.com/blog", label: "Blog", position: "left"},
+					{
+						href: "https://github.com/makergram/internship",
 						label: "GitHub",
 						position: "right",
 					},
@@ -67,28 +73,24 @@ const config = {
 				style: "dark",
 				links: [
 					{
-						title: "Docs",
-						items: [
-							{
-								label: "Tutorial",
-								to: "/docs/intro",
-							},
-						],
-					},
-					{
 						title: "Community",
 						items: [
 							{
-								label: "Stack Overflow",
-								href: "https://stackoverflow.com/questions/tagged/docusaurus",
-							},
-							{
-								label: "Discord",
-								href: "https://discordapp.com/invite/docusaurus",
-							},
-							{
 								label: "Twitter",
-								href: "https://twitter.com/docusaurus",
+								href: "https://twitter.com/maker_gram",
+							},
+							{
+								label: "LinkedIn",
+								href: "https://www.linkedin.com/company/makergram",
+							},
+							{
+								label: "Facebook",
+								href: "https://fb.com/makergram",
+							},
+							{label: "Instagram", href: "https://instagram.com/maker_gram"},
+							{
+								label: "Telegram",
+								href: "https://t.me/makergram",
 							},
 						],
 					},
@@ -96,17 +98,25 @@ const config = {
 						title: "More",
 						items: [
 							{
+								label: "Website",
+								href: "https://makergram.com",
+							},
+							{
+								label: "Community",
+								href: "https://makergram.com/community",
+							},
+							{
 								label: "Blog",
-								to: "/blog",
+								href: "https://makergram.com/blog",
 							},
 							{
 								label: "GitHub",
-								href: "https://github.com/facebook/docusaurus",
+								href: "https://github.com/makergram",
 							},
 						],
 					},
 				],
-				copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+				copyright: `Copyright © ${new Date().getFullYear()} MakerGram. Built with Docusaurus.`,
 			},
 			prism: {
 				theme: lightCodeTheme,
