@@ -31,6 +31,7 @@
     "@commitlint/config-conventional": "^14.1.0",
     "@docusaurus/module-type-aliases": "2.0.0-beta.9",
     "@tsconfig/docusaurus": "^1.0.4",
+    "husky": "^7.0.4",
     "typescript": "^4.3.5"
   },
   "browserslist": {
