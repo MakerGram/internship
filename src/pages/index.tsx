@@ -9,6 +9,8 @@ import HomepageFeatures from "../components/HomepageFeatures";
 
 function HomepageHeader() {
 	const {siteConfig} = useDocusaurusContext();
+	const label = "Explore Interns' Log 🚀";
+
 	return (
 		<header className={clsx("hero hero--primary", styles.heroBanner)}>
 			<div className="container">
@@ -19,7 +21,7 @@ function HomepageHeader() {
 						className="button button--secondary button--lg"
 						to="/docs/intro"
 					>
-						Docusaurus Tutorial - 5min ⏱️
+						{label}
 					</Link>
 				</div>
 			</div>
