@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
 	title: "MakerGram Internship",
 	tagline: "📖 Learn  🗣️ Share 🤝 Collaborate",
-	url: "https://makergram.com/internship",
+	url: "https://internship.makergram.com/",
 	baseUrl: "/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
