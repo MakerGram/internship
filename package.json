@@ -15,7 +15,15 @@
 		"typecheck": "tsc",
 		"lint": "eslint . --ext .js,.jsx,.ts,.tsx",
 		"format": "prettier --check ./src",
-		"bump-version": "yarn version --no-git-tag-version"
+		"bump-version": "yarn version --no-git-tag-version",
+		"get-next-version": "node ./GetNextVersion.js",
+		"release-branch": "git flow release start $(node ./GetNextVersion.js)",
+		"release": "standard-version"
+	},
+	"standard-version": {
+		"skip": {
+			"tag": true
+		}
 	},
 	"dependencies": {
 		"@docusaurus/core": "2.0.0-beta.9",
@@ -23,10 +31,12 @@
 		"@mdx-js/react": "^1.6.21",
 		"@svgr/webpack": "^5.5.0",
 		"clsx": "^1.1.1",
+		"conventional-recommended-bump": "^6.1.0",
 		"file-loader": "^6.2.0",
 		"prism-react-renderer": "^1.2.1",
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1",
+		"semver": "^7.3.5",
 		"url-loader": "^4.1.1"
 	},
 	"devDependencies": {
@@ -47,6 +57,7 @@
 		"eslint-plugin-react-hooks": "^4.2.0",
 		"husky": "^7.0.4",
 		"prettier": "^2.4.1",
+		"standard-version": "^9.3.2",
 		"typescript": "^4.3.5"
 	},
 	"browserslist": {
